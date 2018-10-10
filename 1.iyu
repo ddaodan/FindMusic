@@ -1,0 +1,84 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom|center_horizontal
+background=white</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="RoundImageView">
+<ppt>width=-2
+height=-2
+src=%iApp/源码/com.ddaodan.music/Icon.png</ppt>
+<event><eventItme type="clicki">end()</eventItme></event>
+</View>
+<View id="3" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=全网音乐解析
+textColor=#ffddd000
+textStyle=bold
+textSize=24sp
+layout_marginBottom=30dp</ppt>
+<event></event>
+</View>
+<View id="4" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=启动提示语
+layout_marginBottom=5dp</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">uycl("#ffffff",true)
+
+s nr="你知道吗，点击图标就可以直接跳过|by ddaodan|黄色的任务栏，好像看不清了呢|为什么是黄色风格？因为这是我随便选的|一个半成品"
+.随机语录内容
+sl(nr,"|",sl)
+.分割语录
+sran(0,4,sran)
+sgsz(sl,sran,sgsz)
+.随机访问0～3的语录内容
+us(4,"text",sgsz)
+.写入文本控件
+
+t()
+{
+  hs("https://m.baidu.com/",a)
+.  stop(2000)
+  f(a==null)
+  {
+    sss wangluo="0"
+    ufnsui()
+    {
+      utw("","","u.iyu",true,v)
+      {
+      }
+      gvs(v,2,x)
+      us(x,"text","出问题了！")
+      gvs(v,4,x)
+      us(x,"text","软件无法连接网络，因此软件无法使用！\n\n请检查你的网络连接以及是否给了软件连接网络的权限！")
+      gvs(v,5,x)
+      us(x,"text","关闭")
+      ssj(x,"clicki")
+      {
+        end()
+      }
+    }
+  endcode
+  }
+}</eventItme><eventItme type="loadingComplete">t()
+{
+  stop(2000)
+  f(sss.wangluo=="0")
+  {
+    endcode
+  }
+  else
+  {
+    stop(1000)
+    end()
+  }
+}</eventItme><eventItme type="downkey">t()
+{
+  stop(10)
+}</eventItme></UIEventset>

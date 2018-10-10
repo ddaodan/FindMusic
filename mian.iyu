@@ -1,0 +1,161 @@
+<View id="21" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=50dp
+BackgroundColor=#fffff000</ppt>
+<event></event>
+</View>
+<View id="1" did="21" type="TextView">
+<ppt>width=-2
+height=50dp
+text=全网音乐解析
+textColorHighlight=#000000
+gravity=center_vertical|center_horizontal
+ut_centerInParent=true
+layout_gravity=center</ppt>
+<event></event>
+</View>
+<View id="20" did="21" type="ImageView">
+<ppt>width=50dp
+height=-1
+src=@acm.png
+ut_alignParentRight=true
+background=through</ppt>
+<event><eventItme type="clicki">uigo("setting.iyu")</eventItme></event>
+</View>
+<View id="17" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=horizontal
+gravity=center
+background=white</ppt>
+<event></event>
+</View>
+<View id="2" did="17" type="LinearLayout">
+<ppt>width=80dp
+height=100dp
+orientation=vertical
+background=white</ppt>
+<event><eventItme type="clicki">tw("开发中")</eventItme></event>
+</View>
+<View id="3" did="2" type="ImageView">
+<ppt>width=-1
+height=80dp
+src=%iApp/源码/com.ddaodan.music/Icon.png
+padding=10dp</ppt>
+<event></event>
+</View>
+<View id="4" did="2" type="TextView">
+<ppt>width=-1
+height=20dp
+text=歌曲名解析
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="5" did="17" type="LinearLayout">
+<ppt>width=80dp
+height=100dp
+orientation=vertical
+layout_marginLeft=3dp
+background=white</ppt>
+<event><eventItme type="clicki">uigo("lianjiejx.iyu")</eventItme></event>
+</View>
+<View id="6" did="5" type="ImageView">
+<ppt>width=-1
+height=80dp
+src=@wyyyy.jpg
+padding=10dp</ppt>
+<event></event>
+</View>
+<View id="7" did="5" type="TextView">
+<ppt>width=-1
+height=20dp
+text=链接解析
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="8" did="17" type="LinearLayout">
+<ppt>width=80dp
+height=100dp
+orientation=vertical
+layout_marginLeft=3dp
+background=white</ppt>
+<event><eventItme type="clicki">tws(null,"开发中，敬请期待！",0)</eventItme></event>
+</View>
+<View id="9" did="8" type="ImageView">
+<ppt>width=-1
+height=80dp
+src=@qmkg.jpg
+padding=15</ppt>
+<event></event>
+</View>
+<View id="10" did="8" type="TextView">
+<ppt>width=-1
+height=20dp
+text=全民K歌解析
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="11" did="17" type="LinearLayout">
+<ppt>width=80dp
+height=100dp
+orientation=vertical
+layout_marginLeft=3dp
+visibility=invisible</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="ImageView">
+<ppt>width=-1
+height=80dp
+src=17301567</ppt>
+<event></event>
+</View>
+<View id="13" did="11" type="TextView">
+<ppt>width=-1
+height=20dp
+text=敬请期待
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="14" did="0" type="LinearLayout">
+<ppt>width=80dp
+height=100dp
+orientation=vertical
+visibility=invisible</ppt>
+<event></event>
+</View>
+<View id="15" did="14" type="ImageView">
+<ppt>width=-1
+height=80dp
+src=17301567</ppt>
+<event></event>
+</View>
+<View id="16" did="14" type="TextView">
+<ppt>width=-1
+height=20dp
+text=敬请期待
+gravity=center</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">uycl("#fffff000",true)
+uigo("1.iyu")
+
+s a="网易云音乐，QQ音乐，酷狗音乐，酷我音乐，百度音乐"
+sl(a,"，",yy)
+sss yy=yy</eventItme><eventItme type="loadingComplete">f(sss.wangluo=="0")
+{
+  end()
+}</eventItme><eventItme type="downkey">utw("","","u1.iyu",false,v)
+{
+}
+gvs(v,2,x)
+us(x,"text","提示")
+gvs(v,4,x)
+us(x,"text","你确定要退出吗？")
+gvs(v,5,x)
+us(x,"text","取消")
+gvs(v,6,x)
+us(x,"text","确定")
+ssj(x,"clicki")
+{
+  end()
+}</eventItme></UIEventset>

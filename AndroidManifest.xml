@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<title>全网音乐解析</title>
+<icon>icon.png</icon>
+<packageName>com.ddaodan.music</packageName>
+<versionName>1.0</versionName>
+<versionint>1</versionint>
+<sdk>15</sdk>
+<yuv>3</yuv>
+<remark></remark>
+<Permissions>android.permission.READ_EXTERNAL_STORAGE
+android.permission.INTERNET
+android.permission.WRITE_EXTERNAL_STORAGE
+android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+android.permission.SYSTEM_ALERT_WINDOW</Permissions>
+<createTime>2018-10-07 00:28:49</createTime>
+<upTime>2018-10-07 00:28:49</upTime>

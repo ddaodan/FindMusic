@@ -1,0 +1,19 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="ProgressBar">
+<ppt>width=-2
+height=-2</ppt>
+<event></event>
+</View>
+<View id="3" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=正在解析，请稍候…
+layout_gravity=center_vertical</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>
